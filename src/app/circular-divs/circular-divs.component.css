@@ -1,0 +1,86 @@
+/* .outbackground{
+    background-color: #ffc18a;
+} */
+.outer-circle {
+    position: relative;
+    width: 300px; /* Increase the width of the outer circle */
+    height: 300px; /* Increase the height of the outer circle */
+    border: 2px solid #fac399; /* Add a border for better visibility */
+    border-radius: 50%;
+     /* Change the background color of the outer circle */
+  }
+  
+  .middle-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjust the width of the middle circle */
+    height: 200px; /* Adjust the height of the middle circle */
+    border: 2px solid #fac399; /* Add a border for better visibility */
+    border-radius: 50%;
+     /* Change the background color of the middle circle */
+  }
+  
+  .inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Adjust the width of the inner circle */
+    height: 100px; /* Adjust the height of the inner circle */
+    border: 2px solid#fac399; /* Add a border for better visibility */
+    border-radius: 50%;
+     /* Change the background color of the inner circle */
+  }
+  
+  .category {
+    position: absolute;
+    width: 40px; /* Adjust the width of each category */
+    height: 40px; /* Adjust the height of each category */
+    border-radius: 50%;
+    background-color: #fff; /* Change the background color of each category */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px; /* Adjust the font size of the text */
+    font-weight: bold; /* Add bold font weight to the text */
+  }
+  
+  .category:nth-child(1) {
+    --angle: 0deg;
+    top: -120%;
+    left: calc(50% - 20px); /* Position at the top center of the outer circle */
+  }
+  
+  .category:nth-child(2) {
+    --angle: 60deg;
+    bottom: 100%;
+    left: calc(100% + 60px); /* Adjust left position for spacing */
+  }
+  
+  .category:nth-child(3) {
+    --angle: 120deg;
+    top: calc(50% - -50px);
+    left: calc(100% + 65px); /* Adjust left position for spacing */
+  }
+  
+  .category:nth-child(4) {
+    --angle: 180deg;
+    top: 175%;
+    left: calc(50% - 20px); /* Position at the bottom center of the outer circle */
+  }
+  
+  .category:nth-child(5) {
+    bottom: 100%;
+    --angle: 240deg;
+    right: calc(100% - -60px);
+  }
+  
+  .category:nth-child(6) {
+    --angle: 300deg;
+  top: calc(50% - -50px);
+    right: calc(100% + 65px);
+  }
+  
