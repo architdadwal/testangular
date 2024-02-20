@@ -6,47 +6,45 @@ import { Component } from '@angular/core';
   styleUrls: ['./circular-divs.component.css']
 })
 export class CircularDivsComponent {
-  showInfo: boolean = false;
-  infoHeading: string = '';
-  infoDetails: string = '';
-  infoImage: string = ''; // New property for image URL
+  showInfo: boolean = true; // Initially set to true to display default information
+  infoHeading: string = 'Product'; // Default heading
+  infoDetails: string = 'Learn about our products.'; // Default details
+  infoImage: string = 'path/to/product-image.png'; // Default image
 
-  showInfoDetails(info: string) {
-    this.showInfo = !this.showInfo;
-    switch(info) {
+  showInfoDetails(category: string) {
+    switch(category) {
       case 'Product':
-        this.infoHeading = `Product`;
-        this.infoDetails = `Learn about our products.`;
-        this.infoImage = 'assets/events.png'; // Set image URL for Product
+        this.infoHeading = 'Product';
+        this.infoDetails = 'Learn about our products.';
+        this.infoImage = 'path/to/product-image.png';
         break;
       case 'Service':
-        this.infoHeading = `Services`;
-        this.infoDetails = `Explore our services.`;
-        this.infoImage = 'assets/events.png'; // Set image URL for Service
+        this.infoHeading = 'Service';
+        this.infoDetails = 'Explore our services.';
+        this.infoImage = 'path/to/service-image.png';
         break;
       case 'Contact':
-        this.infoHeading = `Contact us `;
-        this.infoDetails = `Contact us for assistance.`;
-        this.infoImage = 'assets/events.png'; // Set image URL for Contact
+        this.infoHeading = 'Contact';
+        this.infoDetails = 'Contact us for assistance.';
+        this.infoImage = 'path/to/contact-image.png';
         break;
       case 'Category 4':
-        this.infoHeading = `Category 4`;
-        this.infoDetails = `Learn about Category 4.`;
-        this.infoImage = 'assets/events.png'; // Set image URL for Category 4
+        this.infoHeading = 'Category 4';
+        this.infoDetails = 'Learn about Category 4.';
+        this.infoImage = 'path/to/category4-image.png';
         break;
       case 'Category 5':
-        this.infoHeading = `Category 5`;
-        this.infoDetails = `Explore Category 5.`;
-        this.infoImage = 'assets/events.png'; // Set image URL for Category 5
+        this.infoHeading = 'Category 5';
+        this.infoDetails = 'Explore Category 5.';
+        this.infoImage = 'path/to/category5-image.png';
         break;
       case 'Category 6':
-        this.infoHeading = `Category 6`;
-        this.infoDetails = `Contact us for assistance regarding Category 6.`;
-        this.infoImage = 'assets/events.png'; // Set image URL for Category 6
+        this.infoHeading = 'Category 6';
+        this.infoDetails = 'Contact us for assistance regarding Category 6.';
+        this.infoImage = 'path/to/category6-image.png';
         break;
       default:
-        this.infoDetails = '';
-        this.infoImage = ''; // Reset image URL if no valid case
+        break;
     }
   }
 }
