@@ -47,7 +47,10 @@
     font-size: 12px; /* Adjust the font size of the text */
     font-weight: bold; /* Add bold font weight to the text */
   }
-  
+  .category.selected {
+    background-color: #fff; /* White background color for selected category */
+    color: #4e7eff; /* Blueish text color for selected category */
+  }
   .category:nth-child(1) {
     --angle: 0deg;
     top: -120%;
@@ -85,12 +88,15 @@
   }
   
   .container {
+    margin: 20px;
+    padding:25px;
     display: flex;
     width: 100%;
   }
   
   .circular-divs {
     flex: 1;
+    min-width: 50%;
   }
   
   .info-panel {
