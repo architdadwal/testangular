@@ -1,53 +1,62 @@
-<div class="outbackground">
-  <div class="outer-circle">
-    <div class="middle-circle">
-      <div class="inner-circle">
-        <div
-          class="category"
-          style="--angle: 0"
-          (click)="showInfoDetails('Product')"
-        >
-          Product
-        </div>
-        <div
-          class="category"
-          style="--angle: 60deg"
-          (click)="showInfoDetails('Service')"
-        >
-          Service
-        </div>
-        <div
-          class="category"
-          style="--angle: 120deg"
-          (click)="showInfoDetails('Contact')"
-        >
-          Contact
-        </div>
-        <div
-          class="category"
-          style="--angle: 180deg"
-          (click)="showInfoDetails('Category 4')"
-        >
-          Category 4
-        </div>
-        <div
-          class="category"
-          style="--angle: 240deg"
-          (click)="showInfoDetails('Category 5')"
-        >
-          Category 5
-        </div>
-        <div
-          class="category"
-          style="--angle: 300deg"
-          (click)="showInfoDetails('Category 6')"
-        >
-          Category 6
+<div class="container">
+  <div class="circular-divs">
+    <div class="outer-circle">
+      <div class="middle-circle">
+        <div class="inner-circle">
+          <div
+            class="category"
+            style="--angle: 0"
+            (click)="showInfoDetails('Product')"
+          >
+            Product
+          </div>
+          <div
+            class="category"
+            style="--angle: 60deg"
+            (click)="showInfoDetails('Service')"
+          >
+            Service
+          </div>
+          <div
+            class="category"
+            style="--angle: 120deg"
+            (click)="showInfoDetails('Contact')"
+          >
+            Contact
+          </div>
+          <div
+            class="category"
+            style="--angle: 180deg"
+            (click)="showInfoDetails('Category 4')"
+          >
+            Category 4
+          </div>
+          <div
+            class="category"
+            style="--angle: 240deg"
+            (click)="showInfoDetails('Category 5')"
+          >
+            Category 5
+          </div>
+          <div
+            class="category"
+            style="--angle: 300deg"
+            (click)="showInfoDetails('Category 6')"
+          >
+            Category 6
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="info-icons" *ngIf="showInfo">
-  <div>{{ infoDetails }}</div>
+
+  <div class="info-panel" *ngIf="showInfo">
+    <div>
+      <h4>{{ infoHeading }}</h4>
+    </div>
+    <div>
+      <p>{{ infoDetails }}</p>
+    </div>
+    <img [src]="infoImage" alt="Info Image" />
+  </div>
 </div>
