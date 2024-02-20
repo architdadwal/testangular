@@ -5,7 +5,7 @@
     position: relative;
     width: 300px; /* Increase the width of the outer circle */
     height: 300px; /* Increase the height of the outer circle */
-    border: 2px solid #fac399; /* Add a border for better visibility */
+    border: 2px solid #F3962F; /* Add a border for better visibility */
     border-radius: 50%;
      /* Change the background color of the outer circle */
   }
@@ -17,7 +17,7 @@
     transform: translate(-50%, -50%);
     width: 200px; /* Adjust the width of the middle circle */
     height: 200px; /* Adjust the height of the middle circle */
-    border: 2px solid #fac399; /* Add a border for better visibility */
+    border: 2px solid #F3962F; /* Add a border for better visibility */
     border-radius: 50%;
      /* Change the background color of the middle circle */
   }
@@ -29,7 +29,7 @@
     transform: translate(-50%, -50%);
     width: 100px; /* Adjust the width of the inner circle */
     height: 100px; /* Adjust the height of the inner circle */
-    border: 2px solid#fac399; /* Add a border for better visibility */
+    border: 2px solid#F3962F; /* Add a border for better visibility */
     border-radius: 50%;
      /* Change the background color of the inner circle */
   }
